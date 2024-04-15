@@ -1,7 +1,7 @@
 /*
 - Fecha de publicación: 14.4.2024
 - Hora de publicación: 8:00pm
-- Versión de su código: 2
+- Versión de su código: 3
 - Autores: Ing(c): Luisa Victoria Sánchez Ramírez - Juan Manuel Hurtado Isaza
 - Nombre del lenguaje utilizado: “ECMASCRIPT 6.0” (javascript 6.0)
 - Versión del lenguaje utilizado: 6.0
@@ -31,27 +31,27 @@ const prompt = require('prompt-sync')();
 
 //Adivina el numero 0-100
 function getRamdomInt() {
-    let numeroAleatorio = Math.floor(Math.random() * 100);
-    console.log('Adivina un número entre 1 y 100');
-    
-    let numeroUsuario =  prompt('Selecciona el número el cual crees más probable a salir:');
-    
-    
-    //convertir la entrada del usuario a un valor númerico
-    numeroUsuario = parseInt(numeroUsuario);
-    console.log('Muy bien! Tu número es:' +numeroUsuario);
-    
-    
-    
-        if (numeroUsuario == numeroAleatorio) {
-            console.log('¡Nice! Adivinaste el número, el número era:'+ numeroAleatorio);
-            process.exit(); 
-        } else {
-            console.log(numeroUsuario < numeroAleatorio ? 'El número es más bajo': 'El número es más grande');
-        }
-        
-    getRamdomInt();
-    }
+  const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+  console.log('Adivina un número entre 1 y 100');
+  //console.log(numeroAleatorio)
+
+  function funcionamiento() {
+      const numeroUsuario = parseInt(prompt('Dígita un número entre 1 y 100 que quieres adivinar:'));
+
+      if (numeroUsuario === numeroAleatorio) {
+          console.log('¡Nice! Adivinaste el número ' + numeroAleatorio);
+          return;
+      } else if (numeroUsuario < numeroAleatorio) {
+          console.log('El número que ingresaste es menor al número a adivinar.');
+      } else {
+          console.log('El número que ingresaste es mayor al número a adivinar.');
+      }
+
+      funcionamiento();
+  }
+funcionamiento();
+}
+
    // getRamdomInt();
 
 
