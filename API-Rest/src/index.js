@@ -8,7 +8,6 @@ app.use(express.json())
 
 app.use(indexRoutes);
 app.use('/api', getOsitos);
-
 app.use('/api', authRoutes);
 
 // Decir a express que los request los reciba en formato JSON

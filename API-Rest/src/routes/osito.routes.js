@@ -4,6 +4,7 @@ import { getOsitos, getOsito, createOsito, updateOsito, deleteOsito } from '../c
 const router = Router();
 
 router.get('/osito', getOsitos);
+
 router.get('/osito/:id', getOsito);
 
 router.post('/osito', createOsito);
