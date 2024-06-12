@@ -16,7 +16,7 @@ const CharacterTable = () => {
         const data = await response.json();
 
         const charactersWithAlterEgos = await Promise.all(
-          data.results.slice(0, 10).map(async (character) => {
+          data.results.slice(0, 15).map(async (character) => {
             const alterEgoImage = await fetchAlterEgoImage(
               character.name,
               character.id

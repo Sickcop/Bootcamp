@@ -1,21 +1,21 @@
 thead {
-    background-color: #4444447d;
-  }
-  
-  th, td {
-    padding: 12px 15px;
-    border: 1px solid #5555556d;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #3333337f;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #3a3a3a71;
-  }
-  
-  tr:hover {
-    background-color: #55555565;
-  }
+  background-color: #2e7d327d; /* Verde oscuro translúcido */
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #4caf506d; /* Verde translúcido */
+  text-align: center;
+}
+
+th {
+  background-color: #388e3c7f; /* Verde más oscuro translúcido */
+}
+
+tr:nth-child(even) {
+  background-color: #81c78471; /* Verde claro translúcido */
+}
+
+tr:hover {
+  background-color: #66bb6a65; /* Verde medio translúcido */
+}
