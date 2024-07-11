@@ -1,4 +1,3 @@
-# Correcciones Grupo 2
 
 ## Diseño de la base de datos
 
